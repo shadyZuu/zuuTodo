@@ -25,7 +25,7 @@ body {
   line-height: 1.4em;
   background: #eaeaea url('bg.png');
   color: #4d4d4d;
-  width: 550px;
+  width: 355px;
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
@@ -163,7 +163,6 @@ label[for='toggle-all'] {
 }
 
 #toggle-all:before {
-  content: '»';
   font-size: 28px;
   color: #d9d9d9;
   padding: 0 25px 7px;
@@ -196,7 +195,7 @@ label[for='toggle-all'] {
 
 #todo-list li.editing .edit {
   display: block;
-  width: 506px;
+  width: 326px;
   padding: 13px 17px 12px 17px;
   margin: 0 0 0 43px;
 }
@@ -215,15 +214,14 @@ label[for='toggle-all'] {
   bottom: 0;
   margin: auto 0;
   border: none; /* Mobile Safari */
-  -webkit-appearance: none;
-  /*-moz-appearance: none;*/
+  /*-webkit-appearance: none;
+  -moz-appearance: none;*/
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
 }
 
 #todo-list li .toggle:after {
-  content: '✔';
   line-height: 43px; /* 40 + a couple of pixels visual adjustment */
   font-size: 20px;
   color: #d9d9d9;
@@ -256,7 +254,7 @@ label[for='toggle-all'] {
 }
 
 #todo-list li .destroy {
-  display: none;
+  display: block;
   position: absolute;
   top: 0;
   right: 10px;
@@ -283,7 +281,7 @@ label[for='toggle-all'] {
 }
 
 #todo-list li .destroy:after {
-  content: '✖';
+  content: 'âœ–';
 }
 
 #todo-list li:hover .destroy {
