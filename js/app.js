@@ -106,7 +106,7 @@
 
     var label = document.createElement('label');
     label.appendChild( document.createTextNode(todo.title));
-    label.addEventListener('dblclick', todoDblClicked.bind(this, todo));
+    label.addEventListener('click', todoDblClicked.bind(this, todo));
 
     var deleteLink = document.createElement('button');
     deleteLink.className = 'destroy';
